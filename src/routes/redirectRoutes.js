@@ -18,8 +18,14 @@ router.get("/:linkId", async (req, res) => {
       return res.status(404).send("Link not found");
     }
 
+    // Ensure the URL includes a protocol
+    let finalUrl = link.url;
+    if (!/^https?:\/\//i.test(finalUrl)) {
+      finalUrl = "http://" + finalUrl;
+    }
+
     // 3. Redirect to the final URL
-    return res.redirect(link.url);
+    return res.redirect(finalUrl);
   } catch (error) {
     console.error("Redirect Error:", error);
     return res.status(500).send("Server Error");
