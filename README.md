@@ -4,7 +4,7 @@ This is the backend API for the Mini Link Management system, built using Node.js
 
 ## Repository
 
-GitHub Repository: [Mini Link Management Backend](https://https://github.com/Piyush-Puthenpurakkal/mini-link-management-backend)
+GitHub Repository: [Mini Link Management Backend](https://github.com/Piyush-Puthenpurakkal/mini-link-management-backend)
 
 ## Features
 
